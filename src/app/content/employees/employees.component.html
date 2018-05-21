@@ -5,8 +5,15 @@
            #table
            [dataSource]="employees$">
 
-        <!--- Note that these columns can be defined in any order.
-          The actual rendered columns are set as a property on the row definition" -->
+        <ng-container matColumnDef="icons">
+            <th mat-header-cell
+                *matHeaderCellDef>  </th>
+            <td mat-cell
+                *matCellDef="let element"> 
+                <mat-icon>delete_outline</mat-icon> 
+                <mat-icon>edit</mat-icon> 
+            </td>
+        </ng-container>
 
         <!-- Position Column -->
         <ng-container matColumnDef="id">

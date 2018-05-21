@@ -10,6 +10,7 @@ import { MatTableModule } from '@angular/material/table';
 export class EmployeesComponent implements OnInit {
 	employees$;
 	public displayedColumns = [
+		'icons',
 		'id',
 		'name',
 		'company',

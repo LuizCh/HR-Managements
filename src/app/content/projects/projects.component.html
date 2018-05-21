@@ -1,12 +1,19 @@
 <content-nav></content-nav>
-<br><br>
+<br>
 <div class="example-container mat-elevation-z8">
     <table mat-table
            #table
            [dataSource]="projects$">
 
-        <!--- Note that these columns can be defined in any order.
-          The actual rendered columns are set as a property on the row definition" -->
+        <ng-container matColumnDef="icons">
+            <th mat-header-cell
+                *matHeaderCellDef>  </th>
+            <td mat-cell
+                *matCellDef="let element"> 
+                <mat-icon (click)='deleteProject(element.id)'>delete_outline</mat-icon> 
+                <mat-icon>edit</mat-icon> 
+            </td>
+        </ng-container>
 
         <!-- Position Column -->
         <ng-container matColumnDef="id">
