@@ -5,7 +5,6 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { AuthenticationModule } from './authentication/authentication.module';
 import { RouterModule } from '@angular/router';
-import { CoreModule } from './core/core.module';
 import { AuthenticationGuard } from './authentication-guard.service';
 import { AuthenticationService } from './authentication.service';
 
@@ -14,7 +13,6 @@ import { AuthenticationService } from './authentication.service';
 	imports: [
 		BrowserModule,
 		BrowserAnimationsModule,
-		CoreModule,
 		RouterModule.forRoot([
 			{
 				path: '',

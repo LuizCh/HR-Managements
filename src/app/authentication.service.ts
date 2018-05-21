@@ -2,8 +2,8 @@ import { Injectable } from '@angular/core';
 
 @Injectable()
 export class AuthenticationService {
-	private username = 'Luis';
-	private password = '0000';
+	private username = 'Juan';
+	private password = 'admin';
 	usernameInput;
 	passwordInput;
 	authenticated;

@@ -12,7 +12,6 @@ export class LoginComponent implements OnInit {
 
 	goToUsers() {
 		this.route.navigate([ 'content/home' ]);
-		console.log('Vamos a tablas');
 
 		// private authenticationService: AuthenticationService
 		// const isloggin = this.authenticationService.isAuthenticated(user,pass);
